@@ -44,31 +44,23 @@ jobs:
             --api-id   "$APP_ID" \
             --api-hash "$APP_HASH"
 
+      - name: Force applicationId patch
+        run: |
+          BUILD_GRADLE="TelegramSource/TMessagesProj/build.gradle"
+          # استبدال applicationId بكل الطرق الممكنة
+          sed -i 's/applicationId "org\.telegram\.messenger"/applicationId "agou.eko.telegram"/g' "$BUILD_GRADLE"
+          sed -i "s/applicationId 'org\.telegram\.messenger'/applicationId 'agou.eko.telegram'/g" "$BUILD_GRADLE"
+          sed -i 's/namespace "org\.telegram\.messenger"/namespace "agou.eko.telegram"/g' "$BUILD_GRADLE"
+          sed -i "s/namespace 'org\.telegram\.messenger'/namespace 'agou.eko.telegram'/g" "$BUILD_GRADLE"
+          # تحقق من النتيجة
+          grep -E "applicationId|namespace" "$BUILD_GRADLE" | head -5
+          echo "✓ applicationId force-patched"
+
       - name: Setup Firebase
         run: |
-          # نسخ google-services.json وتعديل package_name لـ org.telegram.messenger
-          python3 - << 'PYEOF'
-          import json, shutil
-
-          src = "AGOU/TMessagesProj/google-services.json"
-          dst = "TelegramSource/TMessagesProj/google-services.json"
-
-          shutil.copy(src, dst)
-
-          with open(dst) as f:
-              data = json.load(f)
-
-          for client in data.get("client", []):
-              info = client.get("client_info", {}).get("android_client_info", {})
-              if info.get("package_name") == "agou.eko.telegram":
-                  info["package_name"] = "org.telegram.messenger"
-                  print("✓ package_name fixed → org.telegram.messenger")
-
-          with open(dst, "w") as f:
-              json.dump(data, f, indent=2)
-
-          print("✓ google-services.json ready")
-          PYEOF
+          cp AGOU/TMessagesProj/google-services.json \
+             TelegramSource/TMessagesProj/google-services.json
+          echo "✓ google-services.json copied"
 
       - name: Grant Gradle permissions
         run: chmod +x TelegramSource/gradlew
