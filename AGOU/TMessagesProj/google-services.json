@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:739590728721:android:e8e27f8c0a96b2f1e555b0",
         "android_client_info": {
-          "package_name": "agou.eko.telegram"
+          "package_name": "org.telegram.messenger"
         }
       },
       "oauth_client": [],
