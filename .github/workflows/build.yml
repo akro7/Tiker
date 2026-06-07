@@ -47,14 +47,26 @@ jobs:
       - name: Force applicationId patch
         run: |
           BUILD_GRADLE="TelegramSource/TMessagesProj/build.gradle"
-          # استبدال applicationId بكل الطرق الممكنة
           sed -i 's/applicationId "org\.telegram\.messenger"/applicationId "agou.eko.telegram"/g' "$BUILD_GRADLE"
           sed -i "s/applicationId 'org\.telegram\.messenger'/applicationId 'agou.eko.telegram'/g" "$BUILD_GRADLE"
           sed -i 's/namespace "org\.telegram\.messenger"/namespace "agou.eko.telegram"/g' "$BUILD_GRADLE"
           sed -i "s/namespace 'org\.telegram\.messenger'/namespace 'agou.eko.telegram'/g" "$BUILD_GRADLE"
-          # تحقق من النتيجة
           grep -E "applicationId|namespace" "$BUILD_GRADLE" | head -5
           echo "✓ applicationId force-patched"
+
+      - name: Fix Icon Conflicts
+        run: |
+          TG_RES="TelegramSource/TMessagesProj/src/main/res"
+          for density in mdpi hdpi xhdpi xxhdpi xxxhdpi; do
+            rm -f "$TG_RES/mipmap-${density}/ic_launcher.xml"
+            rm -f "$TG_RES/mipmap-${density}/ic_launcher.png"
+            rm -f "$TG_RES/mipmap-${density}/ic_launcher_round.xml"
+            rm -f "$TG_RES/mipmap-${density}/ic_launcher_round.png"
+          done
+          rm -f "$TG_RES/drawable/ic_launcher_foreground.xml"
+          rm -f "$TG_RES/drawable/ic_launcher_foreground.png"
+          rm -f "$TG_RES/drawable/ic_launcher_background.xml"
+          echo "✓ Icon conflicts cleared"
 
       - name: Setup Firebase
         run: |
