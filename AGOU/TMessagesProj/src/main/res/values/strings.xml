@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AGOU String Resources
+    Overrides Telegram's default strings with AGOU branding
+    @author @A_KOJO / AKRO
+-->
+<resources>
+    <!-- App Identity -->
+    <string name="app_name">AGOU</string>
+    <string name="app_name_short">AGOU</string>
+
+    <!-- About / Info -->
+    <string name="agou_version">AGOU v1.0.0</string>
+    <string name="agou_developer">Developed by @A_KOJO</string>
+    <string name="agou_based_on">Based on Telegram Open Source</string>
+    <string name="agou_about">AGOU is a customized Telegram client.\nBased on the official Telegram open source.\n\nDeveloper: @A_KOJO\nBrand: AKRO</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">AGOU Messages</string>
+    <string name="notification_channel_calls">AGOU Calls</string>
+
+    <!-- Login Screen -->
+    <string name="agou_welcome_title">Welcome to AGOU</string>
+    <string name="agou_welcome_subtitle">The fastest messaging app.\nSign in with your phone number.</string>
+
+    <!-- Settings -->
+    <string name="agou_settings">AGOU Settings</string>
+    <string name="agou_ghost_mode">Ghost Mode</string>
+    <string name="agou_ghost_mode_desc">Read messages without showing read receipts</string>
+    <string name="agou_hide_phone">Hide Phone Number</string>
+    <string name="agou_hide_phone_desc">Hide your phone number from contacts</string>
+
+    <!-- Share -->
+    <string name="share_via_agou">Share via AGOU</string>
+</resources>

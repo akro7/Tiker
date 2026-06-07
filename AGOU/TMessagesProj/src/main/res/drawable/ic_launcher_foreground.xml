@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AGOU App Icon Foreground
+    Paper plane with electric cyan glow - AGOU style
+    @author @A_KOJO / AKRO
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Glow circle behind plane -->
+    <path
+        android:fillColor="#1500A8FF"
+        android:pathData="M54,54 m-30,0 a30,30 0 1,0 60,0 a30,30 0 1,0 -60,0"/>
+
+    <!-- Main plane body - pointing right-up -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M18,56 L88,38 L58,72 Z"/>
+
+    <!-- Bottom wing shadow -->
+    <path
+        android:fillColor="#0066AA"
+        android:pathData="M18,56 L58,72 L44,62 Z"/>
+
+    <!-- Inner highlight fold -->
+    <path
+        android:fillColor="#0088CC"
+        android:fillAlpha="0.7"
+        android:pathData="M44,62 L58,72 L88,38 L50,54 Z"/>
+
+    <!-- Top edge bright highlight -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.2"
+        android:pathData="M18,56 L88,38 L62,44 Z"/>
+
+    <!-- Accent dots top right -->
+    <path
+        android:fillColor="#00D4FF"
+        android:fillAlpha="0.7"
+        android:pathData="M82,22 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"/>
+
+    <path
+        android:fillColor="#00D4FF"
+        android:fillAlpha="0.4"
+        android:pathData="M88,16 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+
+</vector>

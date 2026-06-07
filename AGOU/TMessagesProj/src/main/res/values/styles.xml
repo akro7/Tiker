@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AGOU Themes & Styles
+    @author @A_KOJO / AKRO
+-->
+<resources>
+
+    <!-- ─── Base AGOU Theme ─────────────────────────────────────────────── -->
+    <style name="AgouTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/agou_primary</item>
+        <item name="colorPrimaryDark">@color/agou_primary_dark</item>
+        <item name="colorAccent">@color/agou_primary</item>
+        <item name="android:windowBackground">@color/agou_bg_main</item>
+        <item name="android:statusBarColor">@color/agou_status_bar</item>
+        <item name="android:navigationBarColor">@color/agou_bg_main</item>
+        <item name="android:textColorPrimary">@color/agou_text_primary</item>
+        <item name="android:textColorSecondary">@color/agou_text_secondary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <!-- ─── Transparent Activity (for share) ───────────────────────────── -->
+    <style name="AgouTransparent" parent="AgouTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- ─── Splash Screen ──────────────────────────────────────────────── -->
+    <style name="AgouSplash" parent="AgouTheme">
+        <item name="android:windowBackground">@drawable/agou_splash_bg</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- ─── Bottom Sheet ───────────────────────────────────────────────── -->
+    <style name="AgouBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="backgroundTint">@color/agou_bg_surface</item>
+    </style>
+
+    <!-- ─── Dialog ─────────────────────────────────────────────────────── -->
+    <style name="AgouDialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/agou_primary</item>
+        <item name="android:background">@color/agou_bg_surface</item>
+        <item name="android:textColorPrimary">@color/agou_text_primary</item>
+    </style>
+
+</resources>

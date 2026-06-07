@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739590728721",
+    "project_id": "agou-a7066",
+    "storage_bucket": "agou-a7066.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739590728721:android:e8e27f8c0a96b2f1e555b0",
+        "android_client_info": {
+          "package_name": "agou.eko.telegram"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzEuJoanNIsnCLiSYlAbPjUbIMzZb0sxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AGOU Splash Screen Background
+    Dark blue gradient with subtle pattern
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base dark background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#0A0E1A"
+                android:centerColor="#0D1F3C"
+                android:endColor="#071428" />
+        </shape>
+    </item>
+
+    <!-- Center glow -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#1000A8FF" />
+            <size android:width="400dp" android:height="400dp" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AGOU Color Palette
+    Deep space dark blue + electric cyan
+    @author @A_KOJO / AKRO
+-->
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="agou_primary">#00D4FF</color>
+    <color name="agou_primary_dark">#0099E6</color>
+    <color name="agou_primary_light">#33DDFF</color>
+
+    <!-- Backgrounds -->
+    <color name="agou_bg_main">#0A0E1A</color>
+    <color name="agou_bg_surface">#0D1F3C</color>
+    <color name="agou_bg_card">#112240</color>
+    <color name="agou_bg_elevated">#1A3A5C</color>
+
+    <!-- Text -->
+    <color name="agou_text_primary">#FFFFFF</color>
+    <color name="agou_text_secondary">#B0BEC5</color>
+    <color name="agou_text_hint">#607080</color>
+    <color name="agou_text_accent">#00D4FF</color>
+
+    <!-- Message Bubbles -->
+    <color name="agou_bubble_out">#1A3A5C</color>
+    <color name="agou_bubble_out_text">#FFFFFF</color>
+    <color name="agou_bubble_in">#0D1F3C</color>
+    <color name="agou_bubble_in_text">#FFFFFF</color>
+
+    <!-- Status Bar -->
+    <color name="agou_status_bar">#07101F</color>
+
+    <!-- Divider / Borders -->
+    <color name="agou_divider">#1A2A3A</color>
+    <color name="agou_border">#00D4FF33</color>
+
+    <!-- Accents -->
+    <color name="agou_online">#00E676</color>
+    <color name="agou_error">#FF5252</color>
+    <color name="agou_warning">#FFD740</color>
+
+    <!-- Icon tint -->
+    <color name="agou_icon_tint">#00D4FF</color>
+    <color name="agou_icon_inactive">#607080</color>
+</resources>
